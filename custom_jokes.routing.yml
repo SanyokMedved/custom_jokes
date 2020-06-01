@@ -1,0 +1,7 @@
+custom_joke.update:
+  path: '/custom_jokes_update'
+  defaults:
+    _title: 'Custom Joke Update'
+    _controller: '\Drupal\custom_jokes\Controller\CustomJokesController::jokeUpdate'
+  requirements:
+    _permission: 'access content'

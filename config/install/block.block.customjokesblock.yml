@@ -1,0 +1,26 @@
+uuid: b9beede0-4d49-4afc-9d6e-0a9a7c79c2d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_jokes
+    - system
+  theme:
+    - bartik
+id: customjokesblock
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: custom_jokes_block
+settings:
+  id: custom_jokes_block
+  label: 'Custom Jokes Block'
+  provider: custom_jokes
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,4 @@
+services:
+  jokes_getter:
+    class: Drupal\custom_jokes\JokesGetter
+    arguments: ['@http_client']
